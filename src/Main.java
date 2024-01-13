@@ -1,11 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        int vvod = 1100;
-        if (vvod > 1000) {
-            System.out.println(100 + vvod + (vvod/100));
+        int amount = 300; //сумма пополнения
+        int check = 100; //сумма на счету
+        if (amount > 1000) {
+            System.out.println("Итоговый счёт: " + (check + amount + (amount / 100)));
+            System.out.println("Количество бонусных рублей: " + amount / 100);
         } else {
-            System.out.println(100 + vvod);
+            System.out.println(check + amount);
+            System.out.println("Количество бонусных рублей: " + 0);
         }
     }
 }
